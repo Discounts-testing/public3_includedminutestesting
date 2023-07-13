@@ -15,4 +15,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Sleep
-        run: sleep 5m
+        run: sleep 300s
