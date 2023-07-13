@@ -27,10 +27,10 @@ on:
   # push:
   # Uncomment if you want Pac-Man to run on a periodic schedule. This is useful when trying to hit spending limits.
   # schedule:
-    # - cron: "0 */2 * * *"
+    # - cron: '*/5 * * * *'
 env:
   # The number of minutes each Action and Codespace should run
-  MINUTES: 5
+  MINUTES: 60
   # The number of runs of each Actions and Codespaces machine spec. Increase if trying to hit entitlements quickly.
   # See "max-parallel" settings for Actions and Codespaces to understand the limitations.
   ITERATIONS: 1
@@ -70,7 +70,7 @@ jobs:
       - set_variables
     strategy:
       matrix:
-        os: [windows-latest, windows-latest, windows-latest, windows-latest]
+        os: [windows-latest]
         i: ${{ fromJSON(needs.set_variables.outputs.iterator) }}
       fail-fast: false
       # Increase if using ITERATIONS > 3
