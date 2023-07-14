@@ -26,8 +26,8 @@ on:
   # Uncomment if you want Pac-Man to run on push
   # push:
   # Uncomment if you want Pac-Man to run on a periodic schedule. This is useful when trying to hit spending limits.
-  schedule:
-    - cron: '*/5 * * * *'
+  # schedule:
+  #- cron: '*/5 * * * *'
 env:
   # The number of minutes each Action and Codespace should run
   MINUTES: 60
