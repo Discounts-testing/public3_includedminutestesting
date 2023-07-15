@@ -1,4 +1,4 @@
-name: Mamacosevery5mins2
+name: Macosevery5mins2
 on:
   workflow_dispatch:
   schedule:
